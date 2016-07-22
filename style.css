@@ -1,0 +1,486 @@
+/*
+Theme Name: Bulldozer
+Author: Greg Crowell
+Author URI: http://webdevcontractors.com/
+Description: My responsive Bootstrap 3 wordpress theme
+License: GNU General Public License
+License URI: https://www.gnu.org/licenses/gpl.html
+Tags:  responsive-layout, custom-menu
+*/
+
+
+/*
+ * Globals
+ */
+
+body {
+    font-family: Tahoma, "Times New Roman", Times, serif;
+    color: #000000;
+    background-image: url("img/texture_aluminum.jpg");
+}
+p{
+    padding: 5px;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    margin-top: 0;
+    font-family: 'BananaBrickRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    color: #E97342;
+    padding: 10px;
+}
+
+h2, .h2{
+    color: #F0BA42;
+    font-family: 'JelleeBold', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*
+ * Container
+ */
+
+.container{
+    background-color:transparent;
+}
+
+/*
+ * Row
+ */
+
+.row{
+    background-color:#FFF;
+    border-radius: 4px;
+}
+
+/* Navbar */
+
+.navbar {
+    margin: 20px 0px 20px 0px;
+    font-family: 'JelleeBold', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #E97342;
+}
+
+.navbar-nav{
+    margin-left:5px;
+    margin-right:5px;
+}
+.nav>li>a {
+    display:inline-block;
+    border-radius:4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* Navbar Brand */
+
+.navbar-default .navbar-brand {
+    color: #555;
+}
+.navbar-default .navbar-brand:hover {
+    color: #B5A59E;
+}
+.navbar-brand img{
+    display: inline-block;
+}
+.brand-image{
+    height: 25px;
+    width: 25px;
+    margin-top: -5px;
+}
+
+/* Navbar Link Styles */
+
+.navbar-default .navbar-nav>li>a{
+    color: #555;
+    border-radius: 4px;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+    color: #555;
+    background-color: #F0BA42;
+}
+
+.current_page_parent > a{
+    color: #555;
+    background-color: #F0BA42;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #555;
+    background-color: #F0BA42;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover,
+.navbar-nav>li>.dropdown-menu {
+    background-color: #F0BA42;
+}
+
+/* Nav Dropdown */
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    color: #BCBEAE;
+    text-decoration: none;
+    background-color: #E97342;
+}
+
+.dropdown-menu>li>a{
+    padding: 3px 10px;
+    margin: 0px 10px;
+    border-radius:4px;
+}
+
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
+    color: #BCBEAE;
+    text-decoration: none;
+    background-color: #E97342;
+    outline: 0;
+}
+
+/* Mobile Nav Styles */
+
+.navbar-toggle{
+    background-color: #F0BA42;
+}
+
+@media (max-width: 767px){
+
+    .nav>li>a {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+        color: #555;
+        display:inline-block;
+    }
+
+    .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover,
+    .navbar-nav>li>.dropdown-menu {
+        border-radius: 4px 4px 0px 0px;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+        color: #BCBEAE;
+        text-decoration: none;
+        background-color: #E97342;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover {
+        color: #BCBEAE;
+        text-decoration: none;
+        background-color: #E97342;
+    }
+
+    .navbar-nav .open .dropdown-menu {
+        background-color: #F0BA42;
+        border-radius: 0px 4px 4px 4px;
+    }
+
+    .navbar-nav .open .dropdown-menu .dropdown-header, .navbar-nav .open .dropdown-menu>li>a {
+        padding: 5px 15px 5px 15px;
+    }
+
+    .dropdown-toggle{
+        border-radius: 4px;
+    }
+}
+
+/*
+ * Blog name and description
+ */
+
+.blog-header {
+    padding: 10px 0px 10px 0px;
+    margin: 10px 0px 30px 0px;
+    background-color:#F0BA42;
+}
+.blog-title {
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 60px;
+    font-weight: normal;
+}
+.blog-description {
+    font-size: 20px;
+    color: #555;
+    margin-left:20px;
+    font-family: 'JelleeBold', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+/*
+ * Main column and sidebar layout
+ */
+
+.blog-main {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Sidebar modules for boxing content */
+.sidebar-module {
+    padding: 15px;
+    margin: 0 -15px 15px;
+}
+.sidebar-module-inset {
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Pagination */
+.pager {
+    margin-bottom: 60px;
+    text-align: left;
+}
+.pager > li > a {
+    width: 140px;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+
+/*
+ * Blog posts
+ */
+
+.blog-post {
+    margin-bottom: 60px;
+}
+.blog-post-title {
+    margin-bottom: 5px;
+    font-size: 40px;
+}
+.blog-post-meta {
+    margin-bottom: 20px;
+    color: #999;
+}
+
+
+/*
+ * Footer
+ */
+
+.blog-footer {
+    padding: 40px 0;
+    color: #555;
+    text-align: center;
+    background-color: #e97342;
+    border-top: 1px solid #e5e5e5;
+    font-family: 'JelleeBold', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.blog-footer p:last-child {
+    margin-bottom: 0;
+}
+
+.post-thumb img{
+    width:100%;
+    /*max-width:300px;*/
+    height: auto;
+    margin-bottom:8px;
+}
+
+.comments{
+    border: 1px #ccc solid;
+    padding: 10px;
+    margin-bottom:20px;
+    margin-top:10px;
+}
+
+.comments h3, .comments h2{
+    background: #428bca;
+    color: #fff;
+    padding:5px;
+}
+
+.comment-body{
+    border:#ccc solid 1px;
+    margin-bottom:10px;
+    padding:20px 10px;
+}
+
+.comment-meta{
+    background:#428bca;
+    color:white;
+    padding:10px;
+    overflow:auto;
+}
+
+.comment-meta img{
+    float:left;
+    margin-right:10px;
+}
+
+.comment-reply-link{
+    background:#428bca;
+    color:#fff;
+    display:inline-block;
+    padding:10px 15px;
+}
+.comment-form-input, .comment-form textarea{
+    width:100%;
+    padding: 4px;
+    border: #ccc solid 1px;
+    margin-bottom:15px;
+}
+
+.post-gallery{
+    background: #333;
+    color: #fff;
+    padding:10px;
+    text-align:center;
+}
+.post-gallery h2{
+    color: #fff;
+}
+
+.post-gallery img{
+    background-color:#fff;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+    height: 500px;
+    margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    z-index: 10;
+}
+
+.carousel-caption .btn{
+    background-color: #E97342;
+    border-color: #F1A53B;
+    color: #FFF;
+}
+.carousel-caption .btn:hover{
+    background-color: #F1A53B;
+}
+.carousel-caption .btn:active{
+    background-color: #E97342;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+    height: 500px;
+    background-color: #777;
+}
+.carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 500px;
+}
+.carousel h1{
+    color: #F0BA42;
+    font-size:64px;
+}
+
+.carousel p{
+    color: #FFF;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+    margin-bottom: 20px;
+    padding: 15px;
+    text-align: center;
+}
+.marketing h2 {
+    font-weight: normal;
+}
+.marketing .col-lg-4 p {
+    margin-right: 10px;
+    margin-left: 10px;
+    padding:5px;
+}
+.marketing img{
+    padding: 10px;
+}
+
+
+    /* Featurettes
+    ------------------------- */
+
+.featurette-divider {
+    margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+    color: #E97342;
+    font-family: 'BananaBrickRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Blog Posts
+------------------------- */
+
+.blog-post{
+    margin:20px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+    /* Navbar positioning foo */
+    .navbar-wrapper {
+        margin-top: 20px;
+    }
+    .navbar-wrapper .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .navbar-wrapper .navbar {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    /* The navbar becomes detached from the top, so we round the corners */
+    .navbar-wrapper .navbar {
+        border-radius: 4px;
+    }
+
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 1.4;
+    }
+
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 992px) {
+    .featurette-heading {
+        margin-top: 120px;
+    }
+}
