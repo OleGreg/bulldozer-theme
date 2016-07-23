@@ -27,7 +27,7 @@
 
     add_action('after_setup_theme', 'bulldozer_theme_setup');
 
-    //Add custom bitcoin menu item
+    //Add custom bitcoin menu item to the main nav
 
 
     function bitcoin_nav_item( $nav, $args ) {
@@ -76,6 +76,10 @@
     }
 
     add_action('widgets_init', 'bulldozer_init_widgets');
+
+    //Register Custom Bootstrap Pagination
+
+    require_once('inc/wp_bootstrap_pagination.php');
 
     // Customizer File
 

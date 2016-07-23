@@ -15,6 +15,14 @@
                 <p> <?php __('There are no blog posts to display'); ?> </p>
             <?php endif; ?>
 
+            <?php
+            if (function_exists("wp_bs_pagination"))
+                {
+//                    wp_bs_pagination($the_query->max_num_pages);
+                    wp_bs_pagination();
+                }
+            ?>
+
         </div><!-- /.blog-main -->
 
 <?php get_footer(); ?>
