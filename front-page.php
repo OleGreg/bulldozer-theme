@@ -155,26 +155,26 @@
 <div class="container marketing">
 
     <!-- Three columns of text below the carousel -->
-    <div class="row">
-        <div class="col-lg-4">
-            <img class="img-circle" src="<?php echo get_theme_mod('heading1_image', 'data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='); ?>" alt="Generic placeholder image" width="140" height="140">
-            <h2><?php echo get_theme_mod('heading1_heading', 'heading1 heading'); ?></h2>
-            <p><?php echo get_theme_mod('heading1_text', 'heading1 text, your text goes here'); ?></p>
-            <p><a class="btn btn-default" href="<?php echo get_theme_mod('h_btn_url1', 'http://test.com'); ?>" role="button"><?php echo get_theme_mod('h_btn_text1', 'Read More'); ?> &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-            <img class="img-circle" src="<?php echo get_theme_mod('heading2_image', 'data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='); ?>" alt="Generic placeholder image" width="140" height="140">
-            <h2><?php echo get_theme_mod('heading2_heading', 'heading2 heading'); ?></h2>
-            <p><?php echo get_theme_mod('heading2_text', 'heading1 text, your text goes here'); ?></p>
-            <p><a class="btn btn-default" href="<?php echo get_theme_mod('h_btn_url2', 'http://test.com'); ?>" role="button"><?php echo get_theme_mod('h_btn_text2', 'Read More'); ?> &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-            <img class="img-circle" src="<?php echo get_theme_mod('heading3_image', 'data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='); ?>" alt="Generic placeholder image" width="140" height="140">
-            <h2><?php echo get_theme_mod('heading3_heading', 'heading3 heading'); ?></h2>
-            <p><?php echo get_theme_mod('heading3_text', 'heading3 text, your text goes here'); ?></p>
-            <p><a class="btn btn-default" href="<?php echo get_theme_mod('h_btn_url3', 'http://test.com'); ?>" role="button"><?php echo get_theme_mod('h_btn_text3', 'Read More'); ?> &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
+<!--    <div class="row">-->
+<!--        <div class="col-lg-4">-->
+<!--            <img class="img-circle" src="--><?php //echo get_theme_mod('heading1_image', 'data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='); ?><!--" alt="Generic placeholder image" width="140" height="140">-->
+<!--            <h2>--><?php //echo get_theme_mod('heading1_heading', 'heading1 heading'); ?><!--</h2>-->
+<!--            <p>--><?php //echo get_theme_mod('heading1_text', 'heading1 text, your text goes here'); ?><!--</p>-->
+<!--            <p><a class="btn btn-default" href="--><?php //echo get_theme_mod('h_btn_url1', 'http://test.com'); ?><!--" role="button">--><?php //echo get_theme_mod('h_btn_text1', 'Read More'); ?><!-- &raquo;</a></p>-->
+<!--        </div><!-- /.col-lg-4 -->-->
+<!--        <div class="col-lg-4">-->
+<!--            <img class="img-circle" src="--><?php //echo get_theme_mod('heading2_image', 'data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='); ?><!--" alt="Generic placeholder image" width="140" height="140">-->
+<!--            <h2>--><?php //echo get_theme_mod('heading2_heading', 'heading2 heading'); ?><!--</h2>-->
+<!--            <p>--><?php //echo get_theme_mod('heading2_text', 'heading1 text, your text goes here'); ?><!--</p>-->
+<!--            <p><a class="btn btn-default" href="--><?php //echo get_theme_mod('h_btn_url2', 'http://test.com'); ?><!--" role="button">--><?php //echo get_theme_mod('h_btn_text2', 'Read More'); ?><!-- &raquo;</a></p>-->
+<!--        </div><!-- /.col-lg-4 -->-->
+<!--        <div class="col-lg-4">-->
+<!--            <img class="img-circle" src="--><?php //echo get_theme_mod('heading3_image', 'data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='); ?><!--" alt="Generic placeholder image" width="140" height="140">-->
+<!--            <h2>--><?php //echo get_theme_mod('heading3_heading', 'heading3 heading'); ?><!--</h2>-->
+<!--            <p>--><?php //echo get_theme_mod('heading3_text', 'heading3 text, your text goes here'); ?><!--</p>-->
+<!--            <p><a class="btn btn-default" href="--><?php //echo get_theme_mod('h_btn_url3', 'http://test.com'); ?><!--" role="button">--><?php //echo get_theme_mod('h_btn_text3', 'Read More'); ?><!-- &raquo;</a></p>-->
+<!--        </div><!-- /.col-lg-4 -->-->
+<!--    </div><!-- /.row -->-->
 
 
     <!-- START THE FEATURETTES -->
@@ -189,12 +189,20 @@
             </h2>
             <p class="lead"><?php echo get_theme_mod('featurette1_text', 'Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.'); ?></p>
         </div>
-        <div class="col-md-5">
-            <img class="featurette-image img-responsive center-block" src="<?php echo get_theme_mod('featurette1_image', 'data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='); ?>" alt="Generic placeholder image">
+        <div class="col-md-5 card-container">
+            <div class="card">
+                <div class="front">
+                    <img class="featurette-image img-responsive center-block featurette-image-1" src="<?php echo get_theme_mod('featurette1_image', 'data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='); ?>" alt="Generic placeholder image">
+                </div>
+                <div class="back">
+                    <img class="featurette-image img-responsive center-block featurette-image-1" src="<?php echo get_theme_mod('featurette1_image', 'data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='); ?>" alt="Generic placeholder image">
+                </div>
+            </div>
         </div>
     </div>
 
     <br>
+    <hr>
 
     <div class="row featurette">
         <div class="col-md-7">
@@ -204,12 +212,20 @@
             </h2>
             <p class="lead"><?php echo get_theme_mod('featurette2_text', 'Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.'); ?></p>
         </div>
-        <div class="col-md-5">
-            <img class="featurette-image img-responsive center-block" src="<?php echo get_theme_mod('featurette2_image', 'data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='); ?>" alt="Generic placeholder image">
+        <div class="col-md-5 card-container">
+            <div class="card">
+                <div class="front">
+                    <img class="featurette-image img-responsive center-block featurette-image-2" src="<?php echo get_theme_mod('featurette2_image', 'data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='); ?>" alt="Generic placeholder image">
+                </div>
+                <div class="back">
+                    <img class="featurette-image img-responsive center-block featurette-image-2" src="<?php echo get_theme_mod('featurette2_image', 'data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='); ?>" alt="Generic placeholder image">
+                </div>
+            </div>
         </div>
     </div>
 
     <br>
+    <hr>
 
     <div class="row featurette">
         <div class="col-md-7">
@@ -219,8 +235,15 @@
             </h2>
             <p class="lead"><?php echo get_theme_mod('featurette3_text', 'Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.'); ?></p>
         </div>
-        <div class="col-md-5">
-            <img class="featurette-image img-responsive center-block" src="<?php echo get_theme_mod('featurette3_image', 'data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='); ?>" alt="Generic placeholder image">
+        <div class="col-md-5 card-container">
+            <div class="card">
+                <div class="front">
+                    <img class="featurette-image img-responsive center-block featurette-image-3" src="<?php echo get_theme_mod('featurette3_image', 'data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='); ?>" alt="Generic placeholder image">
+                </div>
+                <div class="back">
+                    <img class="featurette-image img-responsive center-block featurette-image-3" src="<?php echo get_theme_mod('featurette3_image', 'data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='); ?>" alt="Generic placeholder image">
+                </div>
+            </div>
         </div>
     </div>
 

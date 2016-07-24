@@ -20,6 +20,14 @@ body {
 }
 p{
     padding: 5px;
+    color:#000;
+}
+a{
+    color: #E4C541;
+    font-weight:bold;
+}
+a:hover, a:focus{
+    color: #FFF;
 }
 
 h1, .h1,
@@ -53,7 +61,7 @@ h2, .h2{
  */
 
 .row{
-    background-color:#FFF;
+    background-color:#B5A59E;
     border-radius: 4px;
 }
 
@@ -81,10 +89,9 @@ h2, .h2{
 /* Navbar Brand */
 
 .navbar-default .navbar-brand {
-    color: #555;
-    font-family: 'BananaBrickRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #000;
 }
-.navbar-default .navbar-brand:hover {
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:active, .navbar-default .navbar-brand:focus {
     color: #B5A59E;
 }
 .navbar-brand img{
@@ -99,22 +106,22 @@ h2, .h2{
 /* Navbar Link Styles */
 
 .navbar-default .navbar-nav>li>a{
-    color: #555;
+    color: #000;
     border-radius: 4px;
 }
 
 .navbar-default .navbar-nav>li>a:hover{
-    color: #555;
+    color: #000;
     background-color: #F0BA42;
 }
 
 .current_page_parent > a{
-    color: #555;
+    color: #000;
     background-color: #F0BA42;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    color: #555;
+    color: #000;
     background-color: #F0BA42;
 }
 
@@ -137,7 +144,7 @@ h2, .h2{
     border-radius:4px;
 }
 
-.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:active{
     color: #BCBEAE;
     text-decoration: none;
     background-color: #E97342;
@@ -241,6 +248,8 @@ h2, .h2{
 .sidebar-module {
     padding: 15px;
     margin: 0 -15px 15px;
+    background-color:black;
+    border: 1px solid #FFF;
 }
 .sidebar-module-inset {
     padding: 15px;
@@ -393,7 +402,7 @@ h2, .h2{
 /* Declare heights because of positioning of img element */
 .carousel .item {
     height: 500px;
-    background-color: #777;
+    background-color: transparent;
 }
 .carousel-inner > .item > img {
     position: absolute;
@@ -422,18 +431,26 @@ h2, .h2{
 -------------------------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
+
+.marketing div.row{
+    background-color:transparent;
+}
 .marketing .col-lg-4 {
     margin-bottom: 20px;
     padding: 15px;
     text-align: center;
+    border: 1px solid #FFF;
 }
 .marketing h2 {
     font-weight: normal;
+    color: #FFF;
 }
 .marketing .col-lg-4 p {
     margin-right: 10px;
     margin-left: 10px;
     padding:5px;
+    color: #FFF;
+    font-weight:bold;
 }
 .marketing img{
     padding: 10px;
@@ -443,6 +460,42 @@ h2, .h2{
     /* Featurettes
     ------------------------- */
 
+div.row.featurette {
+    background-color:transparent;
+}
+
+.featurette p{
+    color:#FFF;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 20px;
+    border-radius: 4px;
+    -moz-box-shadow:    inset 0 0 10px #d3d3d3;
+    -webkit-box-shadow: inset 0 0 10px #d3d3d3;
+    box-shadow:         inset 0 0 10px #d3d3d3;
+
+}
+
+@media (max-width: 992px) {
+    div.row.featurette:nth-child(n+3){
+        margin-top:50px;
+    }
+    div.row.featurette:nth-child(8) {
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 992px) {
+    .featurette-image-1 {
+        margin-top: 95px;
+    }
+    .featurette-image-2 {
+        margin-top: 125px;
+    }
+    .featurette-image-3 {
+        margin-top: 30px;
+    }
+}
+
 .featurette-divider {
     margin: 80px 0; /* Space out the Bootstrap <hr> more */
 }
@@ -451,11 +504,52 @@ h2, .h2{
 .featurette-heading {
     font-weight: 300;
     line-height: 1;
-    letter-spacing: -1px;
-    color: #E97342;
+    letter-spacing: 1px;
+    font-size: 7vw;
+    /*margin-top:10px;*/
     font-family: 'BananaBrickRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.featurette h2{
+    color: #E97342;
+}
+
+/* Featurette Card Flip CSS */
+
+.card-container{
+    perspective: 700px;
+}
+.card {
+    position:relative;
+    color:#fff;
+    width: 461px;
+    height: 338px;
+    transition: all 0.6s ease;
+    transform-style: preserve-3d;
+    margin-left:auto;
+    margin-right:auto;
+    max-width:100%;
+}
+
+.front, .back {
+    max-width:100%;
+    width: 461px;
+    height: 338px;
+    position: absolute;
+    top:0;
+    left:0;
+    backface-visibility: hidden;
+}
+
+.back{
+    transform: rotateY(180deg);
+}
+.back img{
+    transform: rotateY(180deg);
+}
+.card:hover{
+    transform: rotateY(180deg);
+}
 /* Blog Posts
 ------------------------- */
 
