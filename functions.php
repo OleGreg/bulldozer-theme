@@ -38,8 +38,8 @@
 
         if( $args->theme_location == 'primary' )
             return $nav."</ul><ul class='nav navbar-nav navbar-right'><li " . $active . "><a title='Bitcoin' href='/bitcoin'>
-            <span class='glyphicon glyphicon-bitcoin'></span></a><li><a title='Github' target='blank' href='http://github.com/OleGreg'>
-                <i class='fa fa-github fa-lg' aria-hidden='true'></i></a></li></li>";
+            <span class='glyphicon glyphicon-bitcoin'></span></a></li>
+                ";
 
         return $nav;
     }

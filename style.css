@@ -22,12 +22,8 @@ p{
     padding: 5px;
     color:#000;
 }
-a{
-    color: #E4C541;
-    font-weight:bold;
-}
-a:hover, a:focus{
-    color: #FFF;
+img{
+    max-width:100%;
 }
 
 h1, .h1,
@@ -61,7 +57,7 @@ h2, .h2{
  */
 
 .row{
-    background-color:#B5A59E;
+    /*background-color:#B5A59E;*/
     border-radius: 4px;
 }
 
@@ -205,6 +201,10 @@ h2, .h2{
     .dropdown-toggle{
         border-radius: 4px;
     }
+
+    .panel-body{
+        font-size:3.5vw;
+    }
 }
 
 /*
@@ -244,7 +244,14 @@ h2, .h2{
     line-height: 1.5;
 }
 
-/* Sidebar modules for boxing content */
+/* Sidebar modules */
+.blog-sidebar a, .table-user-information a{
+    color: #E4C541;
+    font-weight:bold;
+}
+.blog-sidebar a:hover, .blog-sidebar a:focus{
+    color: #FFF;
+}
 .sidebar-module {
     padding: 15px;
     margin: 0 -15px 15px;
@@ -596,4 +603,105 @@ div.row.featurette {
     .featurette-heading {
         margin-top: 120px;
     }
+}
+
+/* Custom pages */
+
+    /* Profile Page Type */
+.portfolio-panel-body{
+    padding:30px;
+}
+.panel-info>.panel-heading, .modal-header {
+    color: #E97342;
+    background-color: #F0BA42;
+    border-color: #FFF;
+}
+.panel-info, .panel-footer{
+    background-color:gray;
+    border-color:#FFF;
+}
+.panel-title, .modal-title{
+    font-size:26px;
+    font-family: "Fantasy", Fantasy, monospace;
+}
+.panel-body{
+    overflow:hidden;
+}
+.nav-tabs>li>a{
+    font-size:14px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #555;
+    margin-bottom:0px;
+}
+.nav-tabs>li>a:hover{
+    color:#555;
+}
+.portfolio{
+    margin-bottom:15px;
+}
+
+.portfolio-table>tbody>tr>td{
+    border-top:none;
+    font-size:12px;
+}
+.portfolio-table>tbody>tr>td:before{
+    content:"\00b7 \00a0";
+    position:relative;
+    top: 2px;
+}
+.portfolio-table>tbody>tr>th{
+    border-top:none;
+    font-size:14px;
+    font-weight:bold;
+    position:relative;
+    right:20px;
+}
+.thumbnail .caption{
+    text-align:center;
+}
+.tab-content .thumbnail{
+    margin-top:20px;
+    padding:20px;
+}
+.tab-content p{
+    margin-top:20px;
+    padding:10px;
+    font-size:14px;
+}
+.thumbnail .caption a{
+    font-size:14px;
+    color:#000;
+}
+.thumbnail .caption h3{
+    font-family: "Fantasy", Fantasy, monospace;
+}
+.thumbnail > p > a{
+    color: #337ab7;
+}
+.thumbnail a:hover, .thumbnail a:focus{
+    text-decoration:underline;
+    color:#23527c;
+}
+#sva h3{
+    color:#FFF;
+}
+#sva .thumbnail{
+    background-color:#000;
+}
+#sva a, #sva a:hover{
+    color:#FFF;
+}
+#newarkltp h3{
+    color: #048588;
+}
+#newarkltp img{
+    border: 1px solid #000;
+}
+#legacylmd h3{
+    color: #000;
+}
+.review-badge{
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
 }
