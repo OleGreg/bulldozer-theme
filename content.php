@@ -26,13 +26,17 @@
 
 
     <?php if(is_single()) : ?>
+        <div class="featurette">
         <?php the_content(); ?>
+        </div>
     <?php else : ?>
+        <div class="featurette">
         <?php the_excerpt(); ?>
+        </div>
     <?php endif; ?>
 
-    <?php if(is_single()) : ?>
-        <?php comments_template(); ?>
-    <?php endif; ?>
+<!--    --><?php //if(is_single()) : ?>
+<!--        --><?php //comments_template(); ?>
+<!--    --><?php //endif; ?>
 
 </div><!-- /.blog-post -->

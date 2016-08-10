@@ -471,7 +471,7 @@ div.row.featurette {
     background-color:transparent;
 }
 
-.featurette p{
+.featurette p, .contact-form{
     color:#FFF;
     background-color: rgba(0, 0, 0, .5);
     padding: 20px;
@@ -479,7 +479,9 @@ div.row.featurette {
     -moz-box-shadow:    inset 0 0 10px #d3d3d3;
     -webkit-box-shadow: inset 0 0 10px #d3d3d3;
     box-shadow:         inset 0 0 10px #d3d3d3;
-
+}
+.contact-form{
+    padding:50px;
 }
 
 @media (max-width: 992px) {
@@ -489,6 +491,7 @@ div.row.featurette {
     div.row.featurette:nth-child(8) {
         margin-bottom: 50px;
     }
+
 }
 
 @media (min-width: 992px) {

@@ -80,5 +80,16 @@
 
         <div class="blog-header">
             <h1 class="blog-title"><?php bloginfo('name'); ?></h1>
-            <p class="lead blog-description"><?php bloginfo('description'); ?></p>
+            <p class="lead blog-description"><?php
+                if(is_page()) echo the_title();
+                else if(is_single()){
+                    echo "<a href='" . get_permalink(get_option( 'page_for_posts' )) . "'>Blog</a> > ";
+                    echo the_title();}
+                else if(is_category()){
+                    echo "<a href='" . get_permalink(get_option( 'page_for_posts' )) . "'>Blog</a> > ";
+                    echo get_category(get_query_var('cat'))->name;}
+                else if(is_author()){
+                    echo "<a href='" . get_permalink(get_option( 'page_for_posts' )) . "'>Blog</a> > ";
+                    echo get_the_author();}
+                else echo "Blog"; ?></p>
         </div>

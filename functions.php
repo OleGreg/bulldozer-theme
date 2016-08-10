@@ -7,7 +7,7 @@
  */
 
     // Register Custom Navigation Walker
-    require_once('wp_bootstrap_navwalker.php');
+    require_once('inc/wp_bootstrap_navwalker.php');
 
     function bulldozer_theme_setup(){
 
@@ -52,6 +52,14 @@
     }
 
     add_filter('excerpt_length', 'set_excerpt_length');
+
+    //Add read more link to excerpts
+
+    function excerpt_read_more($more){
+        return '... <a href="'. get_the_permalink() .'">Read More</a>';
+    }
+
+    add_filter( 'excerpt_more', 'excerpt_read_more' );
 
     //widget locations
     function bulldozer_init_widgets($id){
