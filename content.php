@@ -26,11 +26,11 @@
 
 
     <?php if(is_single()) : ?>
-        <div class="featurette">
+        <div class="blog-area">
         <?php the_content(); ?>
         </div>
     <?php else : ?>
-        <div class="featurette">
+        <div class="blog-area">
         <?php the_excerpt(); ?>
         </div>
     <?php endif; ?>
