@@ -21,21 +21,19 @@
                 <td>Apache</td>
                 <td>Wordpress</td>
             </tr>
-                <td>OAuth 2</td>
+                <td>Bootstrap</td>
                 <td>Git</td>
             </tr>
             <tr>
-                <td>Bootstrap</td>
                 <td>Photoshop</td>
             </tr>
             <th>Patterns, Concepts and Standards</th>
             <tr>
                 <td>MVC - Model View Controller</td>
-                <td>OODP - Object Oriented Design Patterns</td>
+                <td>OODP - Object Oriented Design/Development Patterns</td>
             </tr>
             <tr>
                 <td>RESTful APIs</td>
-                <td></td>
             </tr>
             </tbody>
         </table>

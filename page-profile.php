@@ -69,7 +69,7 @@
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            <button href="http://webdevcontractors.com" type="button" class="btn btn-primary">Download Resume</button>
+                                            <a href="<?php echo get_template_directory_uri()?>/files/greg_crowell_resume.docx" type="button" class="btn btn-primary">Download Resume</a>
                                         </div>
                                     </div>
                                 </div>
@@ -88,7 +88,7 @@
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            <button href="http://webdevcontractors.com" type="button" class="btn btn-primary">Download Resume</button>
+                                            <a href="<?php echo get_template_directory_uri()?>/files/greg_crowell_resume.docx" type="button" class="btn btn-primary">Download Resume</a>
                                         </div>
                                     </div>
                                 </div>

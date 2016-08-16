@@ -29,7 +29,7 @@
                 <p>Webdev Contractors is a custom Wordpress theme I coded from scratch. Some theme features include a fully customizable landing page and navigation menu as well as custom
                     post types and page templates. The entire site is built with Bootstrap 3 for a completely responsive, mobile-friendly layout. </p>
                 <p>This is my online web development shop, where
-                    I provide information about my services. Occasionally I blog about technology, renewable energy and bitcoin.</p>
+                    I provide information about my services.</p>
 
                   <div class="panel panel-default">
                     <div class="panel-heading">Project Requirements:</div>
