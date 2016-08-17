@@ -5,8 +5,8 @@
 function google_reviews_handler() {
 
 
-$api_key = "AIzaSyDcZmZhZlXUYzXmziPN1mM8YtrXx4W4OSs";
-$placeid = "ChIJL3KywLpTwokR6vUSAmY9oA4";
+$api_key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+$placeid = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
 $url = "https://maps.googleapis.com/maps/api/place/details/json?placeid=ChIJL3KywLpTwokR6vUSAmY9oA4&key=AIzaSyDcZmZhZlXUYzXmziPN1mM8YtrXx4W4OSs";        //$profile_url = "https://www.googleapis.com/plus/v1/people/115950284...320?fields=image&key={YOUR_API_KEY};"  for portrait to be implemented
 $cache_file = 'google-reviews.php';
 
